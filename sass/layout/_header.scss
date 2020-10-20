@@ -1,0 +1,32 @@
+.header {
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)), 
+    url(../img/hero.jpg);
+    background-size: cover; /* Властивість background-size введена у CSS3 та дозволяє встановити розміри для фонового зображення елементу. */
+    background-position: top;
+    position: relative;/* Положення елемента встановлюється відносно його поточного положення */
+
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); /*Властивість clip визначає розміри прямокутної області позиціонованого елемента, в якій буде показано його вміст.*/
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); /*Властивість clip визначає розміри прямокутної області позиціонованого елемента, в якій буде показано його вміст.*/
+
+    &__logo-box {
+        position: absolute; /* Видаляє елемент з загального потоку */
+        top: 4rem;
+        left: 4rem;
+    }
+    
+    &__logo {
+        height: 3.5rem;
+    }
+    
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}

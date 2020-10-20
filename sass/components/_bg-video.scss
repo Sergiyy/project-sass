@@ -1,0 +1,17 @@
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .15;
+
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; //Свойство object-fit определяет, как содержимое заменяемого элемента, такого как <img> или <video>, должно заполнять контейнер относительно его высоты и ширины.
+        overflow: hidden; //Властивість overflow вказує, що зробити для переповненого елемента:
+    }
+}
